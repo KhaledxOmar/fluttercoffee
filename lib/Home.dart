@@ -6,14 +6,18 @@ class Home extends StatelessWidget{
 
       @override
       Widget build(context) {
+        
         return Scaffold(
           appBar: AppBar(
             title: const Text('Coffee'),
             backgroundColor: Colors.brown,
             centerTitle: true,
           ),
+
           body: Column(
+
             crossAxisAlignment: CrossAxisAlignment.stretch,
+
             children: [
               Container(
                 color: Colors.brown[200],
