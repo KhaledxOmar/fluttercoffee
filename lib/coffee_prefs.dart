@@ -32,6 +32,8 @@ class _CoffeePrefsState extends State<CoffeePrefs> {
             Row(children: [
               const Text("strength: "),
 
+              
+
               for(int i = 0; i<strength; i++)
                 Image.asset('assets/img/coffee_bean.png',
                   width: 25,
@@ -57,6 +59,9 @@ class _CoffeePrefsState extends State<CoffeePrefs> {
 
             Row(children: [
               const Text("sugar: "),
+
+              if(sugar == 0)
+                const Text("No sugar"),
               
               for(int i = 0; i < sugar; i++)
                 Image.asset('assets/img/sugar_cube.png',
@@ -77,7 +82,7 @@ class _CoffeePrefsState extends State<CoffeePrefs> {
                 ),
 
             ]
-            
+
             ),
           ]
         );
